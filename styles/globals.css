@@ -13,7 +13,7 @@ a {
 }
 
 .menu-left{
-  @apply -left-[7rem] transition-all duration-200
+  @apply -left-[7rem] transition-all duration-200 md:left-0
 }
 
 .menu-left.open{
@@ -21,7 +21,7 @@ a {
 }
 
 .menu-right{
-  @apply -right-[7rem] transition-all duration-200
+  @apply -right-[7rem] transition-all duration-200 md:right-0
 }
 
 .menu-right.open{

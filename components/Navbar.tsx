@@ -33,7 +33,7 @@ const  Navbar:React.FC = () => {
                 <button className={'md:hidden hover:bg-green-400 px-3 py-2 rounded-full'} aria-label={'navigation'} onClick={()=>setMenuOpen(prev=>!prev)}>
                     <Image src={bars} alt={'navigation'} width={25} height={25}/>
                 </button>
-                <ul className={`absolute w-24 top-full ${menuOpen && 'open'} ${context?.locale ==='fa' ? 'menu-left' : 'menu-left' } bg-neutral-300 rounded-xl md:rounded-none md:w-auto md:flex md:flex-row md:bg-transparent md:relative md:items-center md:gap-2.5`}>
+                <ul className={`absolute w-24 top-full ${menuOpen && 'open'} ${context?.locale ==='fa' ? 'menu-left' : 'menu-left' } bg-neutral-300 rounded-xl md:translate-x-0 md:rounded-none md:w-auto md:flex md:flex-row md:bg-transparent md:relative md:items-center md:gap-2.5`}>
                     <li className={'cursor-pointer rounded-xl hover:bg-green-400 px-3 py-2'}>{context?.translation['home']}</li>
                     <li className={'cursor-pointer rounded-xl hover:bg-green-400 px-3 py-2'}>{context?.translation['events']}</li>
                     <li className={'cursor-pointer rounded-xl hover:bg-green-400 px-3 py-2'}>{context?.translation['about']}</li>
