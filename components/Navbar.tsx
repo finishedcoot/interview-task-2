@@ -4,6 +4,7 @@ import globe from "@/public/globe.svg"
 import bars from '@/public/bars.svg'
 import {LocaleContext} from "@/components/LocaleContext";
 import {useRouter} from "next/router";
+jest.mock('next/router', () => require('next-router-mock'));
 
 const  Navbar:React.FC = () => {
     const context =useContext(LocaleContext)
