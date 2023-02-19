@@ -11,3 +11,19 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.menu-left{
+  @apply -left-[7rem] transition-all duration-200
+}
+
+.menu-left.open{
+  @apply translate-x-[7rem]
+}
+
+.menu-right{
+  @apply -right-[7rem] transition-all duration-200
+}
+
+.menu-right.open{
+  @apply -translate-x-[7rem]
+}
